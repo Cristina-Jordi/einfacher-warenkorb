@@ -1,0 +1,873 @@
+/*Formating Design*/
+body {
+    margin: 0;
+    overflow-x:hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 18px;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: grey;
+    margin-left:15px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.cart-btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-cart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-subtotal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.title-cart{
+    margin: 0 auto;
+}
+
+#info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.d-none{
+    display: none;
+}
+
+.main-cart-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main {
+    width: 70%;
+    background-color: white;
+    min-width: 500px;
+}
+
+.cartcontainer {
+    padding: 0 10px 0 30px;
+    position: sticky;
+    top: 0;
+    width: 25%;
+    height: 100vh;
+
+}
+
+.header {
+    height: 80px;
+    background-color:#fa8004;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_foodtogo {
+    width:265px;
+    object-fit: cover;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.logo_sushi{
+    position: absolute;
+    top: 215px;
+    height:120px;
+    width: 123px;
+    border-radius: 100%;
+}
+
+.street {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+
+.street:after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+.street, a{
+    text-decoration: none;
+}
+
+.banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.banner-pic{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 45%;
+}
+
+.company{
+    display: flex;
+    justify-content: center;
+}
+
+.company-info{
+    background-color: white;
+    font-family: 'Galdeano', sans-serif;
+    font-size: 25px;
+    margin-left:15px;
+    margin-bottom:10px;
+}
+
+.stars{
+    height:18px;
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+.bewertung{
+    color:#f5800c;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    position: relative;
+    text-decoration: none;
+}
+
+.bewertung:after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+.company-container-stars{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height:120px;
+    margin-bottom:15px;
+}
+
+.stars-bewertung-container{
+    display: flex;
+    align-items: flex-end;
+}
+
+.text-beliebte-gerichte{
+    margin-top: 35px;
+    margin-left:11px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text-company{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin-left:10px;
+    margin-top:12px;
+    line-height: 15px;
+}
+
+.subnav{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+    list-style: none;
+    margin-top:15px;
+}
+
+.li-nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right:20px;
+    height: 27px;
+    color: black;
+}
+
+a:link{
+    color: black;
+}
+
+.li-nav:hover{
+    text-decoration: underline;
+}
+
+a:hover{
+    color: black;
+}
+
+.button-gerichte{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: white;
+    background-color: #fa8004;
+    height: 27px;
+    border-radius: 5px;
+    width:108px;
+    margin-left:10px;
+    margin-right:20px;
+}
+
+.search-pic{
+    height:15px;
+    object-fit: contain;
+    margin-right:10px;
+    margin-left:10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-pic{
+    height:20px;
+    object-fit: contain;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.lang-pic{
+    height:20px;
+    object-fit: contain;
+    margin-right: 20px;
+    border: 3px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/*Formating Meals im JS-File*/
+#menu{
+    font-family: 'Galdeano', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#info{
+    margin-bottom: 20px;
+}
+
+.text-cart{
+    text-align: center;
+    color: grey;
+    font-size:12px;
+}
+
+hr {
+    border-width: 1px;
+    border-radius: 50%;
+    width:100%;
+}
+
+.text-cart-title{
+    margin: 0 auto;
+}
+
+.cart-pic{
+    height: 100px;
+    margin-top: 30px;
+}
+
+.center-cart-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#carts-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    width:85%;
+}
+
+.border {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px 20px 0px;
+    width: 96%;
+    margin-left:10px;
+    box-shadow: 1px 1px 10px hsla(0,0%,0%, 0.4);
+}
+
+button {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #f88c20;
+    border: 1px solid silver;
+    border-radius: 5px;
+    box-shadow: 10px 7px 8px silver;
+}
+
+.delete-btn{
+    width: 70px;
+}
+
+.btn-singleprice {
+    width: 190px;
+    height: 30px;
+    background-color: #CFB994;
+    border: 1px solid hsla(301, 28%, 32%, 0.3);
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgb(94, 92, 92);
+}
+
+.decrease-btn{
+    margin-right: 5px;
+}
+
+.cart{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-start;
+    align-items: center;
+} 
+
+.cart-content{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cart-content-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-cart{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -5px;
+}
+
+.btn-cart-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:10px;
+}
+
+.food{
+    background-color: #CFB994;
+    padding-top:20px;
+}
+
+#hideCosts{
+    width: 100%;
+}
+
+.cart-costs-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px 0 30px;
+    position: sticky;
+    top: 0;
+    width: 25%;
+    height:100vh;
+    min-width: 250px;
+    margin-bottom:256px;
+}
+
+.cost-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width:100%;
+}
+
+.costs {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+#subTot, #delCost, #discount, #tot {
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.priceRow-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bezahlen-btn {
+    margin-top: 15px;
+    height: 30px;
+    width: 100%;
+    background-color: #f88c20;
+    border: 1px solid silver;
+    border-radius: 7px;
+    box-shadow: 10px 7px 8px silver;
+    cursor: pointer;
+}
+
+.price-cart, .menu-cart {
+    margin-left: 8px;
+    min-width: 34px;
+}
+
+.menu-title{
+    color: #673A66;
+    margin-left: 0px;
+}
+
+.thumb {
+    height: 100px;
+    width: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 7px 7px 5px rgb(94, 92, 92);
+}
+
+.meal-text {
+    width: 30%;
+} 
+
+.meal-thumb {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*Lightbox big pics*/
+.box-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    background-color: rgba(41, 39, 39, 0.7);
+}
+
+.thumbs:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.img-zoom {
+    height: 80vh;
+    max-width: 75vw;
+    object-fit: contain;
+    padding: 3px;
+    padding: 2px;
+}
+
+.cancel {
+    z-index: 5;
+    position: absolute;
+    top: 25px;
+    left: 5%;
+    height: 12px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top:10px;
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+.footer-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: grey;
+    line-height: 15px;
+    margin-left:15px;
+}
+
+.top-pic{
+    height:15px;
+    object-fit: contain;
+    cursor: pointer;
+    border: 2px solid #f88c20;
+    padding:5px;
+    border-radius: 100%;
+}
+
+.mail-foodtogo{
+    text-decoration: underline;
+    color: grey !important;
+    cursor: pointer;
+}
+
+.mail-foodtogo:hover{
+    cursor: pointer;
+}
+
+.spieltage{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-top:10px;
+}
+
+
+@media(max-width: 902px){
+    .subnav {
+    display: none;
+    }
+}
+
+@media(max-width: 942px){
+    .logo_sushi {
+    top: 212px;
+    height: 85px;
+    width: 88px;
+    border-radius: 100%;
+    }
+}
+
+
+@media (min-width: 801px) {
+    .button-cart{
+    display:none !important;
+    }
+
+    .box-container-cart {
+    display: none;
+    }
+} 
+
+
+@media(max-width: 800px) {
+    .button-cart{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    height: 35px;
+    background-color: #f88c20;
+    box-shadow: 1px 1px 10px hsla(0,0%,0%, 0.4);
+    margin:0;
+    border-radius: unset;
+    width:100vw;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0px;
+  }
+
+  .box-container-cart {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    background-color: rgba(41, 39, 39, 0.7);
+    min-width: 410px;
+    }
+
+    #wholeCart{
+    transform: translateX(0);
+    transition: all 500ms ease-in-out;
+}
+
+  .d-none{
+    display:none !important;
+    }
+
+    .main{
+        width: 100%;
+    }
+
+    .cart-costs-container{
+    position: fixed;
+    top: 0px;
+    align-items: center;
+    padding: 0 30px 0 30px;
+    width: 60%;
+    background-color: white;
+    z-index: 1;
+    height: 100vh;
+    margin: auto;
+    right: 0;
+    left: 0;
+    margin-bottom: 256px;
+    }
+
+    .cart{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: unset !important;
+    width: 100% !important;
+    }
+
+} 
+
+
+
+@media(min-width: 350px) and (max-width: 799px) {
+
+.border{
+    flex-direction: column;
+    align-items: center;
+    width:94%;
+    }
+
+#wholeCart{
+    transform: translateX(0);
+    transition: all 500ms ease-in-out;
+    width:70%;
+    }
+
+#priceRow{
+    margin-right:unset;
+    }
+
+.priceRow-container{
+    margin-left:14px;
+    }
+
+.cart{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cart-btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cart-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    }
+
+.cart-costs-container{
+    margin-bottom: 256px !important;
+    }
+
+.btn-cart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-subtotal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-cart{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.thumb{
+    margin-top: 15px;
+    padding-left: 10px;
+    }
+
+.meal-text{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+.main{
+    min-width: unset;
+    }
+
+.header{
+    background-color: #fa8004;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height:100px;
+    padding: 10px 0;
+    }
+
+.logo_sushi {
+    top: 257px;
+    height: 85px;
+    width: 88px;
+    border-radius: 100%;
+    }
+
+.street{
+        margin-top: -5px;
+    }
+
+.subnav {
+    display: none;
+    }
+
+.text-company{
+    padding-right: 10px;
+    text-align: justify;
+    }
+
+.text-beliebte-gerichte {
+        margin-top:-7px;
+    }
+
+.cancel {
+    z-index: 5;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    height: 12px;
+    object-fit: contain;
+    cursor: pointer;
+    }
+
+.footer-container{
+        margin-bottom:45px;
+    }
+
+    .menu-title{
+        text-align: center;
+        width:180px;
+    }
+
+.price-cart, .menu-cart {
+    margin-left: 8px;
+    min-width: 34px;
+    width: 120px;
+    }
+
+    #info{
+        text-align: center;
+        width:180px;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galdeano&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="renderShop()">
+
+    <div class="body-container" id="top">
+        <div class="header">
+            <div><img src="img/logo_foodtogo.png" class="logo_foodtogo"></div>
+            <div class="nav"><a href="#">
+                    <p class="street">Bayerstrasse 10A, 80335 München</p>
+                </a></div>
+            <div class="lang"></div>
+            <div class="login"><img src="img/lang_de.png" class="lang-pic"><img src="img/nav.png" class="nav-pic"></div>
+        </div>
+        <div class="main-cart-container">
+            <div class="main">
+                <div class="banner"><img class="banner-pic" src="img/sushi_header.jpg"></div>
+                <div class="company-container-stars">
+                    <div class="company-info">Sushi Do - Japanese Food</div>
+                    <div class="stars-bewertung-container"><img src="img/stars.png" class="stars"><a href="#"
+                            class="bewertung">(4.5k Bewertungen)</a></div>
+                    <div class="text-company">Wir stellen die Gerichte täglich mit frischen Zutaten her.
+                        Wir verwenden nur Zutaten von zertifizierten Lieferanten. <b>Gratislieferung an Spieltagen!</b>
+                    </div>
+                    <div class="subnav">
+                        <li><img src="img/search.png" class="search-pic"></li>
+                        <li><button class="button-gerichte">Beliebte Gerichte</button></li>
+                        <li class="li-nav"><a href="#">Salat</a></li>
+                        <li class="li-nav"><a href="#">Vegane Gerichte</a></li>
+                        <li class="li-nav"><a href="#">Sushi-Platten</a></li>
+                        <li class="li-nav"><a href="#">Spring Roll</a></li>
+                        <li class="li-nav"><a href="#">Sushi-Maki</a></li>
+                        <li class="li-nav"><a href="#">Sushi-Inside-Out</a></li>
+                        <li class="li-nav"><a href="#">Sushi-Nigiri</a></li>
+                        <li class="li-nav"><a href="#">Sushi-Gunkan</a></li>
+                        <li class="li-nav"><a href="#">></a></li>
+                    </div>
+                </div>
+                <div class="company"><img src="img/Sushi_Do_Logo.jpg" class="logo_sushi"></div>
+
+                <div class="content"></div>
+
+                <!-- Food-Container in JS gerendert -->
+                <div id="food"></div>
+
+                <div id="btn-cart"></div>
+                <footer id="footer"></footer>
+            </div>
+
+            <div id="wholeCart" class="cart-costs-container d-none">
+                <div id="carts-container"></div>
+                <div id="hideCosts">
+                <div id="costs-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="box"></div>
+    <div id="boxCart"></div>
+    
+</body>
+
+</html>
